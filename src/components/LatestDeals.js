@@ -61,7 +61,7 @@ const LatestDeals = ()=> {
         <div>
            <span className="flex justify-between px-2">
             <span>
-                <h1 className="">Latest Deals for This Week</h1>
+                <h1 className="text-xl">Latest Deals for This Week</h1>
                 <p className="text-sm text-gray-400 font-lightbold">Dont miss out this weeks deals</p>
             </span>
             <Link to="/shop/Latest Deals for This Week"><span className="flex flex-col-1 items-center gap-1 hover:text-red-600">View All<BsArrowRight/></span></Link>

@@ -14,7 +14,7 @@ const Header = ()=> {
     
     return(
         <>
-        <div className=" sticky top-0 z-10 shadow-md shadow-gray-400 w-full  bg-white flex flex-col lg:flex-row md:flex-row lg:flex mg:flex justify-between gap-6  py-5 px-2  mx-auto ">
+        <div className=" sticky top-0 z-10 shadow-md shadow-gray-300 w-full  bg-white flex flex-col lg:flex-row md:flex-row lg:flex mg:flex justify-between gap-6  py-5 px-2  mx-auto ">
           <span>
             <div className="flex justify-between px-2">
                 <RiMenu2Fill onClick={toggle} size={28} className="lg:hidden md:hidden text-gray-800"/>
