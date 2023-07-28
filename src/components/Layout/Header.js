@@ -25,7 +25,7 @@ const Header = ()=> {
     
           <span className="flex space-x-4 items-center flex-col-1 justify-center  ">
             <div className="flex relative w-full ">
-                <input placeholder="Search..." className="bg-gray-200 px-4 pr-14 py-2 rounded-lg ml-3 mr-3 w-full focus:outline-none"/>
+                <input placeholder="Search..." className="bg-gray-200 px-4 pr-14 py-2 rounded-lg ml-3 mr-3 w-full focus:outline-none focus:ring-[1px] focus:ring-[#105c64]"/>
                 <button className="bg-[#105c64] h-[100%] w-[10%] absolute right-3 flex flex-col items-center justify-center rounded-tr-md rounded-br-md"> <FiSearch className="text-white" size={22}/></button>
             </div>
         
