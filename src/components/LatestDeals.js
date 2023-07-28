@@ -66,7 +66,7 @@ const LatestDeals = ()=> {
             </span>
             <Link to="/shop/Latest Deals"><span className="flex flex-col-1 items-center gap-1 hover:text-red-600">View All<BsArrowRight/></span></Link>
            </span>
-           <div className="flex  mx-2 gap-2 overflow-scroll [&::-webkit-scrollbar]:hidden">
+           <div className="flex pl-2 pt-2  mx-2 gap-2 overflow-scroll [&::-webkit-scrollbar]:hidden">
            {products.map(product =>  (
             <ProductCard title={product.title} image={product.image} price={product.price}/>
           ))}

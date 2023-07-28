@@ -58,7 +58,7 @@ const Shop = () => {
 
     return(
         <div className="h-full px-2 mt-5">
-            <h1 className="text-2xl font-lightbold ">{params.heading}</h1>
+            <h1 className="text-2xl font-lightbold px-2">{params.heading}</h1>
             <div className="flex flex-wrap mx-2 gap-2 mt-5 ">
             {products.map(product =>  (
              <ProductCard title={product.title} image={product.image} price={product.price}/>
