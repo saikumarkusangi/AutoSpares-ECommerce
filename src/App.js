@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import TermsAndConditions from "./components/pages/TermsAndConditions";
 import RefundPolicy from "./components/pages/RefundPolicy";
+import Categories from "./components/pages/Categories";
 
 function App() {
   function ScrollToTop() {
@@ -33,6 +34,7 @@ function App() {
             <Route path="/terms-conditions" element={<TermsAndConditions/>} />
             <Route path="/refund-policy" element={<RefundPolicy/>} />
             <Route path="/cart" element={<Cart/>} />
+            <Route path="/categories" element={<Categories/>} />
             <Route path="/shop/:heading" element={<Shop/>} />
             <Route path="/product/:title" element={<Product/>} />
           </Routes>
