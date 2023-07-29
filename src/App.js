@@ -10,8 +10,16 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import TermsAndConditions from "./components/pages/TermsAndConditions";
 import RefundPolicy from "./components/pages/RefundPolicy";
 import Categories from "./components/pages/Categories";
+import AOS from "aos";
 
 function App() {
+    useEffect(()=>{
+      AOS.init({
+        once: true,
+      });
+  },[]);
+
+  
   function ScrollToTop() {
     const {pathname} = useLocation();
     useEffect(()=>{

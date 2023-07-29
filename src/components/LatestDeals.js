@@ -58,7 +58,7 @@ const LatestDeals = ()=> {
     ]  
  
     return(
-        <div className="mt-5">
+        <div  className="mt-5">
            <span className="flex justify-between px-4">
             <span>
                 <h1 className="text-2xl font-lightbold">Latest Deals</h1>
@@ -68,7 +68,7 @@ const LatestDeals = ()=> {
            </span>
            <div className="flex pl-2 pt-2  mx-2 gap-2 overflow-y-hidden overflow-scroll [&::-webkit-scrollbar]:hidden">
            {products.map(product =>  (
-            <ProductCard title={product.title} image={product.image} price={product.price}/>
+            <ProductCard  title={product.title} image={product.image} price={product.price}/>
           ))}
           </div>
         </div>
