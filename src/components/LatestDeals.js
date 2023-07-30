@@ -64,7 +64,7 @@ const LatestDeals = ()=> {
                 <h1 data-aos-once="true" data-aos="fade-right" className="text-2xl font-lightbold">Latest Deals</h1>
                 <p data-aos-once="true" data-aos="fade-right" className="text-sm text-gray-400 font-lightbold">Dont miss out this weeks deals</p>
             </span>
-            <Link data-aos-once="true" data-aos="fade-left" to="/shop/Latest Deals"><span className="flex flex-col-1 items-center gap-1 hover:text-red-600">View All<BsArrowRight/></span></Link>
+            <Link data-aos-once="true" data-aos="fade-left" to="/shop/Latest-Deals"><span className="flex flex-col-1 items-center gap-1 hover:text-red-600">View All<BsArrowRight/></span></Link>
            </span>
            <div className="flex pl-2 pt-2  mx-2 gap-2 overflow-y-hidden overflow-scroll [&::-webkit-scrollbar]:hidden">
            {products.map(product  =>  (

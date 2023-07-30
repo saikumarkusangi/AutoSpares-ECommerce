@@ -11,6 +11,9 @@ import TermsAndConditions from "./components/pages/TermsAndConditions";
 import RefundPolicy from "./components/pages/RefundPolicy";
 import Categories from "./components/pages/Categories";
 import AOS from "aos";
+import Login from "./components/pages/Login";
+import SignUp from "./components/pages/signup";
+import Account from "./components/pages/Account";
 
 function App() {
     useEffect(()=>{
@@ -44,6 +47,9 @@ function App() {
             <Route path="/categories" element={<Categories/>} />
             <Route path="/shop/:heading" element={<Shop/>} />
             <Route path="/product/:title" element={<Product/>} />
+            <Route path="/auth/login" element={<Login/>} />
+            <Route path="/auth/sign-up" element={<SignUp/>} />
+            <Route path="/account" element={<Account/>} />
           </Routes>
       </Layout>
       </BrowserRouter>

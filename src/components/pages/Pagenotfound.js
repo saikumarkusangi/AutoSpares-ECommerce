@@ -13,6 +13,7 @@ const PageNotFount = ()=> {
             <img className="w-full md:w-2/5 lg:w-2/5" src={PageNotFoundImage} alt="page not found"/>
             <Link to='/'> <button className="bg-[#326d74] w-full text-lg md:text-xl lg:text-xl rounded-lg text-white shadow-md shadow-slate-400 px-4 py-2">Go to Home</button></Link>
         </div>
+        
         </>
     )
 }

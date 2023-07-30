@@ -10,7 +10,7 @@ const BottomNav = () => {
                 <Link to="/" className="flex flex-col gap-1 items-center text-xs text-gray-500"><BiHomeAlt size={22}/> HOME</Link>
                 <Link to="/categories" className="flex flex-col gap-1 items-center text-xs text-gray-500"><BsListUl size={22}/> CATEGORIES</Link>
                 <Link className="flex flex-col gap-1 items-center text-xs text-gray-500"><FiSearch size={22}/> SEARCH</Link>
-                <Link className="flex flex-col gap-1 items-center text-xs text-gray-500"><VscAccount size={22}/> ACCOUNT</Link>
+                <Link to="/account" className="flex flex-col gap-1 items-center text-xs text-gray-500"><VscAccount size={22}/> ACCOUNT</Link>
             </div>
          )
 }

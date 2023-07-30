@@ -79,15 +79,15 @@ const Shop = () => {
                     <span className="flex">
                         <AiOutlineSortAscending size={24} />
                         <select name="orderby" className="w-32 bg-transparent focus:outline-none" aria-label="Shop order">
-                            <option value="popularity">Sort by popularity</option>
-                            <option value="rating">Sort by average rating</option>
-                            <option value="date" selected="selected">Sort by latest</option>
-                            <option value="price">Sort by price: low to high</option>
-                            <option value="price-desc">Sort by price: high to low</option>
+                            <option value="popularity">Sort by Latest</option>
+                            <option value="date" selected="selected">Sort by Instock</option>
+                            <option value="price">Price : Low to High</option>
+                            <option value="price-desc">Price : High to Low</option>
                         </select>
                     </span>
                 </form>
             </div>
+            
         </div>
     )
 }
