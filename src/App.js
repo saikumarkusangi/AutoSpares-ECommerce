@@ -24,7 +24,7 @@ function App() {
   function ScrollToTop() {
     const {pathname} = useLocation();
     useEffect(()=>{
-      window.scrollTo(0,0)
+      window.scrollTo(0,0);
     },[pathname])
     
   }
@@ -34,9 +34,7 @@ function App() {
      <BrowserRouter>
      <ScrollToTop/>
       <Layout>
-         
           <Routes>
-            
             <Route path="/" element={<Home/>} />
             <Route path="*" element={<PageNotFount/>} />
             <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
@@ -47,7 +45,6 @@ function App() {
             <Route path="/shop/:heading" element={<Shop/>} />
             <Route path="/product/:title" element={<Product/>} />
           </Routes>
-      
       </Layout>
       </BrowserRouter>
      </div>

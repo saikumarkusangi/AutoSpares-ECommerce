@@ -39,7 +39,7 @@ const Header = ()=> {
           
         </div>
         {isOpen && (
-            <div className=" z-30 left-0 top-0 fixed h-full w-[100%]  bg-[rgba(0,0,0,0.4)] ">
+            <div className=" z-50 left-0 top-0 fixed h-full w-[100%]  bg-[rgba(0,0,0,0.4)] ">
                <div className="relative w-[60%] px-4 py-20 h-full bg-[#105c64] flex flex-col gap-5 min-w-max items-center animate-[slide_0.3s_ease-in-out]">
                <AiOutlineClose onClick={toggle} size={28} className="absolute right-3 top-5 text-white"/>
                <NavLink className="text-xl text-center text-white" to="/">Home</NavLink>
