@@ -14,7 +14,6 @@ const Home = () => {
                 <link rel="canonical" href=""/>
             </Helmet>
             <Banner/>
-            <SearchForm/>
             <LatestDeals/>
             <Collections/>
         </div>

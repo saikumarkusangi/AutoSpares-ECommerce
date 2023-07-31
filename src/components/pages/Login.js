@@ -10,7 +10,8 @@ const Login = ()=> {
 
     return(
         <div className="px-8 py-4 mt-8 mb-12">
-            <h1 className="text-3xl text-center mb-16">Login</h1>
+            <h1 className="text-3xl text-center font-bold text-[#1d575e] mb-4">Login</h1>
+            <hr className="bg-gray-100 h-[3px] mb-10"/>
             <form className="mt-10 flex flex-col gap-5">
                 <input placeholder="Mobile Number" className="border-2 w-full pl-4 pr-10 py-3 border-gray-300 rounded-md focus:ring-[#326d74] focus:ring-2 focus:outline-none"></input>
                 <span className="flex relative">

@@ -14,6 +14,7 @@ import AOS from "aos";
 import Login from "./components/pages/Login";
 import SignUp from "./components/pages/signup";
 import Account from "./components/pages/Account";
+import SearchForm from "./components/SearchForm";
 
 function App() {
     useEffect(()=>{
@@ -49,6 +50,7 @@ function App() {
             <Route path="/product/:title" element={<Product/>} />
             <Route path="/auth/login" element={<Login/>} />
             <Route path="/auth/sign-up" element={<SignUp/>} />
+            <Route path="/search-form" element={<SearchForm/>} />
             <Route path="/account" element={<Account/>} />
           </Routes>
       </Layout>
