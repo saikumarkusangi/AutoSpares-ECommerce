@@ -85,16 +85,22 @@ const Cart = ()=> {
                 <p className="text-xl">₹ {products[0].price * quntity + 80}</p>
                </span>
                <hr className="h-[2px] bg-gray-200 mx-1"/>
-               <span className="flex justify-between my-4">
-               <p className="font-medium text-lg">Shipping</p>
-               <p className="text-xl">₹ {80}</p>
-              </span>
+               <div>
+                <span className="flex justify-between my-4">
+                <p className="font-medium text-lg">Shipping</p>
+                <p className="text-xl">₹ {80}</p>
+                </span>
+               </div>
               <hr className="h-[2px] bg-gray-200 mx-1"/>
               <span className="flex justify-between my-4">
               <p className="font-medium text-lg">Total</p>
               <p className="text-2xl font-semibold">₹ {products[0].price * quntity + 80 + 80}</p>
              </span>
-             <button className="bg-green-500 text-white text-lg py-4 px-2 font-medium rounded-lg mx-auto w-full mt-4">Proceed to checkout</button>
+             <Link to="https://mercury-t2.phonepe.com/transact/pg?token=ZGNmMTI0ZGQyZGYzMjg1YWNiYTlhM2NlNDliMjI3YjJkYzQ1NjYzYzAwMmExNzhkZDNkMWZkYTg2NmRkYTZhM2NjMzQwY2FlMDM5Y2NiMzBkMTdkNmNjZjYyNmU0ZTlmZjlhYTkzZTM0NWI4ODgzNTkwOGQ5NjpmOTVlNzMzOTEzYmIyODVjY2NiOTFlODUwMDc4NTA5Yg" >
+                <div className="bg-green-500 text-center text-white text-lg py-4 px-2 font-medium rounded-lg mx-auto w-full mt-4">
+                Proceed to checkout
+                </div>
+            </Link>
              </div>
             
            </div>
