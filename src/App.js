@@ -1,11 +1,11 @@
+import { lazy,Suspense } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Home from "./components/pages/Home";
 import PageNotFount from "./components/pages/Pagenotfound";
 import Cart from "./components/pages/Cart";
 import Shop from "./components/pages/Shop";
 import Product from "./components/pages/Product";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import PrivacyPolicy from "./components/pages/PrivacyPolicy";
 import TermsAndConditions from "./components/pages/TermsAndConditions";
 import RefundPolicy from "./components/pages/RefundPolicy";
@@ -15,6 +15,8 @@ import Login from "./components/pages/Login";
 import SignUp from "./components/pages/signup";
 import Account from "./components/pages/Account";
 import SearchForm from "./components/SearchForm";
+const Home = lazy(() => import ("./components/pages/Home"));
+
 
 function App() {
     useEffect(()=>{
@@ -37,7 +39,12 @@ function App() {
      <div>
      <BrowserRouter>
      <ScrollToTop/>
-      <Layout>
+       <Suspense fallback={
+        <div>
+         <img className="w-10 flex flex-col justify-center items-center" src="https://i.pinimg.com/originals/3d/6a/a9/3d6aa9082f3c9e285df9970dc7b762ac.gif" alt="loading..."/>
+        </div>
+       }>
+       <Layout>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="*" element={<PageNotFount/>} />
@@ -47,13 +54,14 @@ function App() {
             <Route path="/cart" element={<Cart/>} />
             <Route path="/categories" element={<Categories/>} />
             <Route path="/shop/:heading" element={<Shop/>} />
-            <Route path="/product/:title" element={<Product/>} />
+            <Route path="/product/:id" element={<Product/>} />
             <Route path="/auth/login" element={<Login/>} />
             <Route path="/auth/sign-up" element={<SignUp/>} />
             <Route path="/search-form" element={<SearchForm/>} />
             <Route path="/account" element={<Account/>} />
           </Routes>
       </Layout>
+       </Suspense>
       </BrowserRouter>
      </div>
   );
